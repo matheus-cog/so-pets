@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DFA8011-1B8B-44C9-AC03-ABF569B40F19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>soPets</RootNamespace>
+    <AssemblyName>soPets</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastroCliente.Designer.cs">
+      <DependentUpon>cadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastroConsulta.Designer.cs">
+      <DependentUpon>cadastroConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastroFuncionario.Designer.cs">
+      <DependentUpon>cadastroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastroPet.Designer.cs">
+      <DependentUpon>cadastroPet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPetShop.cs" />
+    <Compile Include="conexao.cs" />
+    <Compile Include="edicaoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edicaoCliente.Designer.cs">
+      <DependentUpon>edicaoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edicaoConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edicaoConsulta.Designer.cs">
+      <DependentUpon>edicaoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edicaoFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edicaoFuncionario.Designer.cs">
+      <DependentUpon>edicaoFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edicaoPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edicaoPet.Designer.cs">
+      <DependentUpon>edicaoPet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeMain.Designer.cs">
+      <DependentUpon>HomeMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeUser.Designer.cs">
+      <DependentUpon>HomeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeVeterinary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeVeterinary.Designer.cs">
+      <DependentUpon>HomeVeterinary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listagemCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listagemCliente.Designer.cs">
+      <DependentUpon>listagemCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listagemConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listagemConsulta.Designer.cs">
+      <DependentUpon>listagemConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listagemFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listagemFuncionario.Designer.cs">
+      <DependentUpon>listagemFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listagemPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listagemPet.Designer.cs">
+      <DependentUpon>listagemPet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marcarExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marcarExame.Designer.cs">
+      <DependentUpon>marcarExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receitarMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receitarMedicamentos.Designer.cs">
+      <DependentUpon>receitarMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="remocaoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remocaoCliente.Designer.cs">
+      <DependentUpon>remocaoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="remocaoConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remocaoConsulta.Designer.cs">
+      <DependentUpon>remocaoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="remocaoFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remocaoFuncionario.Designer.cs">
+      <DependentUpon>remocaoFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="remocaoPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remocaoPet.Designer.cs">
+      <DependentUpon>remocaoPet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="resultadosExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resultadosExame.Designer.cs">
+      <DependentUpon>resultadosExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solicitarExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solicitarExame.Designer.cs">
+      <DependentUpon>solicitarExame.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cadastroCliente.resx">
+      <DependentUpon>cadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastroConsulta.resx">
+      <DependentUpon>cadastroConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastroFuncionario.resx">
+      <DependentUpon>cadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastroPet.resx">
+      <DependentUpon>cadastroPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edicaoCliente.resx">
+      <DependentUpon>edicaoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edicaoConsulta.resx">
+      <DependentUpon>edicaoConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edicaoFuncionario.resx">
+      <DependentUpon>edicaoFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edicaoPet.resx">
+      <DependentUpon>edicaoPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeMain.resx">
+      <DependentUpon>HomeMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeUser.resx">
+      <DependentUpon>HomeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeVeterinary.resx">
+      <DependentUpon>HomeVeterinary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listagemCliente.resx">
+      <DependentUpon>listagemCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listagemConsulta.resx">
+      <DependentUpon>listagemConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listagemFuncionario.resx">
+      <DependentUpon>listagemFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listagemPet.resx">
+      <DependentUpon>listagemPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marcarExame.resx">
+      <DependentUpon>marcarExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="receitarMedicamentos.resx">
+      <DependentUpon>receitarMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remocaoCliente.resx">
+      <DependentUpon>remocaoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remocaoConsulta.resx">
+      <DependentUpon>remocaoConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remocaoFuncionario.resx">
+      <DependentUpon>remocaoFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remocaoPet.resx">
+      <DependentUpon>remocaoPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resultadosExame.resx">
+      <DependentUpon>resultadosExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solicitarExame.resx">
+      <DependentUpon>solicitarExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minusIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconClose %28black%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconMinus %28black%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_home_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_list_alt_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_edit_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_delete_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_ballot_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-horizontal-line-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-horizontal-line-24%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_view_list_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_info_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_home_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_minimize_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_list_alt_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_edit_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_delete_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_view_list_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_info_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_transparent_cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_description_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_medicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_exit_to_app_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_clear_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_search_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_transparent1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
